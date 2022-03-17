@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    function demNguyenAm(string) {
+        let count = 0
+        let arr1 = ['a', 'o', 'e', 'u', 'i']
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < string.length; j++) {
+                if (arr1[i] == string[j]) {
+                    count++
+                }
+            }
+        }
+        if (count==0){
+            return false
+        }
+        return count
+    }
+
+    let string = 'quuiuiu'
+
+    console.log(demNguyenAm(string))
+</script>
